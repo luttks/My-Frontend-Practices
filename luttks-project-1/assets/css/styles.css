@@ -1,6 +1,12 @@
 /* Header */
 .header{
-        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    position: fixed; /* Cố định header ở đầu trang */
+    top: 0; /* Căn lề trên cùng của khung nhìn */
+    left: 0; /* Căn lề trái của khung nhìn */
+    width: 100%; /* Chiều rộng toàn màn hình */
+    z-index: 1000; /* Đảm bảo header nằm trên các nội dung khác */
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
 .header-top {
     background-color: var(--color-one);
@@ -97,11 +103,12 @@
 .button {
     background: var(--color-text);
     color: #fff;
-    padding: 15px 35px;
-    font-size: 18px;
+    padding: 15px 40px;
+    font-size: 17px;
     border-radius: 45px;
     border: 2px solid var(--color-text);
     display: inline-block;
+    font-weight: 600;
 }
 
 .button:hover {
@@ -253,6 +260,7 @@
 .section-two .inner-wrap{
     display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .section-two .inner-wrap .inner-box{
@@ -299,20 +307,55 @@
 }
 
 .section-two .inner-box .inner-title{
-    font-size: 25px;
+    font-size: 30px;
     color: #fff;
     margin-top: 0;
     margin-bottom: 20px;
     line-height: 1.2;
 }
 
-@media  (max-width: 992px){
-    .section-two .inner-wrap{
-        flex-wrap: wrap;
+.section-two .inner-box .inner-title-2{
+    font-size: 30px;
+    color : var(--color-one);
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.section-two .inner-box .inner-sale{
+    color: var(--color-two);
+    font-size: 48px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.section-two .inner-box .inner-price-new{
+    color: var(--color-two);
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.section-two .inner-box .inner-price-old{
+    color: #BBBBBB;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 700px;
+}
+
+
+@media (max-width: 992px) {
+    .section-two .inner-wrap {
+        flex-wrap: wrap !important; /* Ensure wrap is applied */
+        flex-direction: column; /* Explicitly stack vertically */
     }
 
-    .section-two .inner-box{
-        width: 100%;
+    .section-two .inner-box {
+        width: 100% !important; /* Override any conflicting width */
         aspect-ratio: 2/1;
         margin-bottom: 30px;
     }
@@ -324,9 +367,44 @@
     }
 }
 
-
-
 /* End Section Two */
+
+/* Section Three */
+.section-three{
+    background-color: #EFF2F5;
+    padding: 100px 0;
+}
+
+.section-three .inner-head{
+    text-align: center;
+    max-width: 630px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.section-three .inner-head .inner-title{
+    font-size: 48px;
+    color: var(--color-one);
+    margin: 0;
+}
+
+.section-three .inner-head .inner-desc{
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.section-three .inner-wrap{
+    display: flex;
+}
+
+.section-three .inner-box{
+    text-align: center;
+    width: calc(100% / 3);
+    padding: 0 15px;
+}
+
+/* End Section Three */
 
 
 

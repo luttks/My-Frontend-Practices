@@ -1,0 +1,38 @@
+introduce bootstrap
+-- định nghĩa sẵn class : chỉ cần lôi ra dùng
+-- bộ khung nền giúp phát triển web nhanh hơn
+link : https://getbootstrap.com/docs/4.6/getting-started/introduction/
+
+nhúng link : cdn 
+nhúng local theo đường dẫn
+
+
+dựng layout và sử dụng grid:
+-- không cần reset.css
+giới thiệu .container:
+
+cac diem ngat responsive
+
+.container 
+1200 -> 992 -> 768 -> 576 -> 0
+1140px.  960px. 720px. 540px. 100%
+
+.container-fluid: full screen
+padding left padding right : 15px
+
+
+các điểm ngắt bootstrap
+1199.98 991.98 767.98 575.98px
+
+*grid* : quan trong nhat
+dua tren flex box
+flex-swap : đầy elemets thì xuống hàng
+https://getbootstrap.com/docs/4.6/layout/grid/
+
+
+03. Components
+1. Alerts : thông báo
+2. Badges : biểu hiện thông báo
+3. button : các nút
+4. 
+
