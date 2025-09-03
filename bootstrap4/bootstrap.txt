@@ -28,6 +28,17 @@ các điểm ngắt bootstrap
 dua tren flex box
 flex-swap : đầy elemets thì xuống hàng
 https://getbootstrap.com/docs/4.6/layout/grid/
+col- : mặc định (mobile)
+
+col-sm- : ≥576px
+
+col-md- : ≥768px
+
+col-lg- : ≥992px
+
+col-xl- : ≥1200px
+
+col-xxl- : ≥1400p
 
 
 03. Components
@@ -36,3 +47,12 @@ https://getbootstrap.com/docs/4.6/layout/grid/
 3. button : các nút
 4. 
 
+dựng tiếp layout bài bài9bài
+compnents:
+1.collapse: mặc định đóng nếu gọi show thì sẽ show
+2. dropdown : btn co menu - khi click btn show ra menu
+3. form: bieu mau : 
+4. check_box
+5. modal : hay sử dụng 
+6 navs : hay sd
+7 pagination

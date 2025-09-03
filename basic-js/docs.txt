@@ -1,0 +1,30 @@
+inline -- viết trục tiếp vào thẻ : hạn chế dùng
+internal -- viết vào file html hiện tại 
+external -- viết vào 1 file js và nhúng vào trang html
+
+
+biến(variable): lưu trữ thông tinh
+var tenBien = giaTri;
+trong đó tenBien là tên bạn muốn đặt
+giaTri là gía trịg
+var a = 15;
+var b = 20;
+var c = a + b; => kết quả 35
+
+
+console.log là tab console debug js
+
+quy tắc đặt tên
+ko đc bắt đầu -, số, có - ko đc 
+tenBien
+TenBien
+ten_bien
+tienbien123 
+camelCase : tenBien
+
+
+toán tử 
+số học : +, -, *, /, ** : lũy thừa, %, ++, --
+
+// tiền tố hậu tố of toán tử ++ 0--
+a++ a--- , ...
